@@ -27,11 +27,6 @@ public class RestController {
 	@ResponseBody
 	public List<Location> test() {
 		logger.info("Test test");
-
-//		Location a = new Location("1", "Toronto", "ON", "Canada");
-//		List<Location> list = new ArrayList<Location>();
-//		list.add(a);
-//		return list;
 		
 		return locationDAO.list(); 
 	}
