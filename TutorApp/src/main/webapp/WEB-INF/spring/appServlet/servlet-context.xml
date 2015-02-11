@@ -28,5 +28,8 @@
 	<beans:bean id="restTest" class="com.tutorapp.web.RestController">
         <beans:property name="locationDAO" ref="locationDAO" />
     </beans:bean>
+    
+    <beans:bean id="homeTest" class="com.tutorapp.web.HomeController">
+    </beans:bean>
 	
 </beans:beans>
