@@ -33,7 +33,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li> <!-- sign in btn -->
-        <a id="sign-in-link"> <span class="glyphicon glyphicon-log-in"></span> Log in </a>
+        <a id="sign-in-link"data-toggle="modal" data-target="#LogInDialog"> <span class="glyphicon glyphicon-log-in"></span> Log in </a>
         </li>
         <li> <!-- sign up btn -->
         <a id="sign-up-link"> <span class="glyphicon glyphicon-user"></span> Sign Up </a>
@@ -43,13 +43,13 @@
   </div>
 </nav> <!-- navbar -->
 
-<div class="container">
-  <div class="input-group input-group-lg"> <!-- Search bar -->
+<div class="container"> <!-- Search bar -->
+  <div class="input-group input-group-lg">
     <span class="input-group-btn"> <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-menu-hamburger"></span> </button> </span>
     <input type="text" class="form-control" placeholder="Search a course...">
     <span class="input-group-btn"> <button class="btn btn-warning" type="button"> <span class="glyphicon glyphicon-search"></span> </button> </span>
-  </div> <!-- Search bar -->
-</div>
+  </div>
+</div> <!-- Search bar -->
 
 
 
@@ -62,6 +62,32 @@
 <script src="bootstrap/dist/js/bootstrap.js"></script>
 <script src="js/global.js"></script>
 <script src="js/main_page.js"></script>
+
+
+<div  id="LogInDialog" class="modal fade">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">Log In</h3>
+      </div>
+
+      <div class="modal-body">
+          <input type="text" class="form-control" id="username" placeholder="Username">
+          <br>
+          <input type="text" class="form-control" id="password" placeholder="Password">
+        </table>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Log in</button>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 </body>
 </html>
